@@ -9,8 +9,16 @@ Input: `Hello, there`
 
 Output: `HELLO, THERE`
 
-2. **Given a String, return a String alternating between uppercase and lowercase letters**
+```
+var hello = "Hello, there"
 
+hello.uppercased()
+
+var helloUpperCased = hello 
+
+```
+
+2. **Given a String, return a String alternating between uppercase and lowercase letters**
 
 Input: `Hello, there`
 
@@ -32,12 +40,24 @@ Output: `Hllo, thr`
 Input: `[1,5,2,4,1,4]`
 
 Output: `5`
+```
+var myArray = [1,5,2,4,1,4]
+
+myArray.max()
+
+```
 
 2. **Given an array of type [Int], return the smallest element**
 
 Input: `[1,5,2,4,1,4]`
 
 Output: `1`
+```
+var myArray = [1,5,2,4,1,4]
+
+myArray.min()
+```
+
 
 3. **Given an array of type [Int], return its sum**
 

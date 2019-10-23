@@ -65,11 +65,25 @@ Input: `[1,5,2,4,1,4]`
 
 Output: `17`
 
+```
+var arraySum = [1,5,2,4,1,4]
+
+arraySum.reduce(0, +)
+
+```
+
 4. **Given an array of type [Double], return its average**
 
 Input: `[3,4.5,7.5,2,1]`
 
 Output: `3.6`
+
+```
+var doubleArray: [Double] = [3,4.5,7.5,2,1]
+
+doubleArray.reduce(0, +) / 5
+
+```
 
 5. **Given an array of type [Double] and a Double, return the sum of all numbers in the array greater than a given number**
 

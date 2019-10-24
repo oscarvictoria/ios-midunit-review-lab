@@ -81,7 +81,7 @@ Output: `3.6`
 ```
 var doubleArray: [Double] = [3,4.5,7.5,2,1]
 
-doubleArray.reduce(0, +) / 5
+doubleArray.reduce(0, +) / Double(doubleArray.count)
 
 ```
 
@@ -91,6 +91,18 @@ Input: `[3,4.5,7.5,2,1], 3`
 
 Output: `12`
 
+```
+var greaterArray = [3,4.5,7.5,2,1]
+var sum = 0.0
+for num in greaterArray {
+    if num > 3.0 {
+        sum += num
+        }
+}
+
+print(sum)
+```
+
 
 6. **Given an array of type [Double], return the product of all the elements**
 
@@ -98,12 +110,39 @@ Input: `[3,4.5,7.5,2,1]`
 
 Output: `202.5`
 
+```
+var productArray = [3,4.5,7.5,2,1]
+func multi(_ arr: [Double]) -> Double {
+    var product = 0.0
+    for num in productArray {
+        product += num * num
+    }
+    return product
+}
+multi([3,4.5,7.5,2,1])
+
+```
+
 7. **Given an array of type [Int], return the second smallest value in the array**
 
 Input: `[3,6,1,9,4,8]`
 
 Output: `3`
 
+```
+var myNewArray
+    = [3,6,1,9,4,8]
+
+func secondSmallest(_ arr: [Int]) -> Int {
+    let sortedArray = myNewArray.sorted()
+   
+    return sortedArray[1]
+}
+
+print(secondSmallest([3,6,1,9,4,8]))
+
+
+```
 ## Optionals
 
 1. **Given an array of type [String?] return an array of [String] removing all nil values**
